@@ -1,0 +1,736 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  }
+html{
+  font-size: 10px;
+  font-size: 62%;
+}
+
+  body{
+    
+    background-color:rgb(166, 240, 172) ;
+margin: 1px 3px;
+  }
+  .web-name{
+    font-size: 2.5rem;
+    color: white;
+    text-align: start;
+    
+  }
+    ul{
+      align-self: center;
+        list-style: none;
+        background-color: black;
+       text-align: end;
+        position: fixed;
+        width: 100%;
+        border-radius: 15px;
+    }
+    ul li{
+     
+        display: inline-block;
+        position: relative;
+    }
+    ul li a{
+        display: block;
+        padding: 21px 27px;
+        font-size: 2.5rem;
+        color:white;
+        text-decoration: none;
+        text-align: center;
+    }
+    ul li ul.Dropdown li {
+        display: block;
+      background-color: black;
+        margin: 1px 0px;
+        padding: 6px 0px;
+    }
+    ul li ul.Dropdown li a:hover{
+      color: wheat;
+    }
+    ul li ul.Dropdown {
+        width: auto;
+        background-color:rgb(166, 240, 172);
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+    ul li a:hover {
+        background: rgb(85, 79, 66);
+        color: wheat;  
+    }
+       
+    ul li:hover ul.Dropdown {
+        display: block;
+           }
+           .Dropdown li a{
+            padding:0px;
+            font-size: 2.0rem;
+           }
+           .search{
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            width: 30%;
+            height: 33px;
+            align-items: center;
+            margin: auto;
+            border-radius: 20px;
+           
+           }
+           .search input{
+             border: 0px;
+           outline: none;
+           padding-right: 10%;
+           color: black;
+           font-weight: 400;
+           font-size: 1.9rem;
+           }
+           .search a{
+             color: black;
+            font-size: 2rem;
+           right: 30%;
+           }
+
+           .grid{
+            display: flex;
+            width: 100%;
+            height: auto;
+            font-size: 2.3rem;
+            background-color: black;
+            color: white;
+            padding: 1px 40px ;
+        border-radius: 15px;
+        justify-content: center;        
+        }
+        .containerr{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+           grid-gap: 40px;
+        }
+
+ .first{
+height: 2000px;
+width: 27%;
+border: 1px dotted black;
+float: left;
+border-radius: 15px;
+}
+.second{
+  border-radius: 15px;
+  height: 2000px;
+  width: 100%;
+  border: 1px dotted black;
+}
+    .amaz{
+      color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 2.6rem;
+  border-radius: 15px;
+      }
+
+.box{
+    background-color: rgb(214, 200, 200);
+    width: 130px;
+    height: 125px;
+    padding: 1px;
+    margin: 4px;
+   border: 1px solid black;
+   border-radius: 15px;
+   overflow: hidden;
+  transition:backround-color 6s ,border-radius 3s;
+ 
+}
+.box:hover{
+  background-color: white;
+  border-radius: 5px;
+}
+.box a
+{
+  color: blue;
+  font-size: 1.5rem;
+}
+.box_right a{
+  color: blue;
+  font-size: 1.5rem;
+}
+.box
+{
+  float: left;
+}
+
+
+.wrapper a:hover
+{
+color: brown;
+}
+.box_right
+{
+ width: 100%;
+ height: 50px;
+ border:solid black ;
+ border-radius: 15px;
+ overflow: hidden;
+}
+.box_right img{
+  height:25px ;
+  width: 25px;
+}
+
+.box img{
+  height: 70px;
+  width: 83px;
+  border-radius: 30px;
+  padding: 0px 5px;
+
+}
+
+@media  (max-width:1600px) {
+  html{
+    font-size: 76%;
+  }
+
+ ul li a{
+        padding: 22px 29px;
+    }
+   
+   
+    ul li ul.Dropdown {
+        z-index: 999;
+    }
+
+    .Dropdown li a{
+            padding:1px;
+           }
+           .search{
+           
+            width: 35%;
+            height: 35px;
+           
+           }
+           .search input{
+           padding-right: 13%;
+           }
+           .search a{
+           right: 33%;
+           }
+
+           .grid{
+            padding: 1px 60px ;      
+        }
+        .containerr{
+           grid-gap: 60px;
+        }
+
+
+}
+@media  (max-width:1500px) {
+  html{
+    font-size: 74%;
+  }
+  ul li a{
+    padding: 21.5px 28px;
+}
+
+
+.Dropdown li a{
+        padding:1px;
+       }
+       .search{
+       
+        width: 34%;
+        height: 34px;
+       
+       }
+       .search input{
+       padding-right: 12%;
+       }
+       .search a{
+       right: 32%;
+       }
+
+       .grid{
+        padding: 1px 58px ;      
+    }
+    .containerr{
+       grid-gap: 57px;
+    }
+
+
+}
+  @media  (max-width:1400px) {
+    html{
+      font-size: 72%;
+    }
+   
+  
+  @media  (max-width:1350px) {
+    html{
+      font-size: 70%;
+    }  
+    @media  (max-width:1300px) {
+      html{
+        font-size: 67%;
+      }
+     
+  @media  (max-width:1250px) {
+    html{
+      font-size: 65%;
+    }
+   
+ul li a{
+  padding: 21px 21px;
+}
+
+    
+.box{
+width: 128px;
+height: 123px;
+padding: 1px;
+margin: 4px;
+}
+.box img{
+height: 69px;
+width: 81px;
+border-radius: 30px;
+padding: 0px 5px;
+
+}
+}
+}
+@media  (max-width:1200px) {
+  html{
+    font-size: 66%;
+  }
+ 
+ul li a{
+  padding: 21px 19px;
+}
+
+    
+.box{
+width: 126px;
+height: 121px;
+padding: 1px;
+margin: 4px;
+}
+.box img{
+height: 68px;
+width: 80px;
+border-radius: 30px;
+padding: 0px 5px;
+
+}
+}
+}
+ 
+@media  (max-width:1150px) {
+  html{
+    font-size: 64%;
+  }
+  ul li a{
+    padding: 21px 17px;
+  }
+      
+  .box{
+  width: 125px;
+  height: 120px;
+  padding: 1px;
+  margin: 4px;
+  } 
+  .box img{
+  height: 67px;
+  width: 79px;
+  
+  }
+  }
+}
+}
+@media  (max-width:1100px) {
+  html{
+    font-size: 62%;
+  }
+  ul li a{
+    padding: 21px 15px;
+  }
+   
+  .box{
+  width: 124px;
+  height: 119px;
+  padding: 1px;
+  margin: 3.5px;
+  }  
+  .box img{
+  height: 66px;
+  width: 78px;
+  border-radius: 30px;
+  padding: 0px 5px;
+  
+  }
+  }
+  
+  
+
+@media  (max-width:1050px){
+  html{
+    font-size: 60%;
+  }
+  ul li a{
+    padding: 21px 13px;
+  }
+  ul li ul.Dropdown li {
+    margin: 1px 0px;
+    padding: 6px 0px;
+  }
+  
+  ul li ul.Dropdown {
+    z-index: 999;
+  }
+  
+  .Dropdown li a{
+        padding:0px;
+       }
+       .search{
+       
+        width: 30%;
+        height: 33px;
+       
+       }
+       .search input{
+       padding-right: 10%;
+       }
+       .search a{
+       right: 30%;
+       }
+  .box{
+  width: 123px;
+  height: 118px;
+  padding: 1px;
+  margin: 4px;
+  }
+  
+  .box img{
+  height: 65px;
+  width: 77px;
+  
+  }
+  }
+  
+
+@media  (max-width:1000px){
+  html{
+    font-size: 59%;
+  }
+  ul li a{
+    padding: 21px 27px;
+  }
+  ul li ul.Dropdown li {
+    margin: 1px 0px;
+    padding: 6px 0px;
+  }
+  
+  ul li ul.Dropdown {
+    z-index: 999;
+  }
+  
+  .Dropdown li a{
+        padding:0px;
+       }
+       .search{
+       
+        width: 30%;
+        height: 33px;
+       
+       }
+       .search input{
+       padding-right: 10%;
+       }
+       .search a{
+       right: 30%;
+       }
+  .box{
+  width: 122px;
+  height: 117px;
+  padding: 1px;
+  margin: 4px;
+  }
+  
+  .box img{
+  height: 64px;
+  width: 76px;
+  border-radius: 30px;
+  padding: 0px 5px;
+  
+  }
+  
+}
+@media  (max-width:950px){
+  html{
+    font-size: 58%;
+  }
+  ul li a{
+    padding: 21px 27px;
+  }
+  ul li ul.Dropdown li {
+    margin: 1px 0px;
+    padding: 6px 0px;
+  }
+  
+  ul li ul.Dropdown {
+    z-index: 999;
+  }
+  
+  .Dropdown li a{
+        padding:0px;
+       }
+       .search{
+       
+        width: 30%;
+        height: 33px;
+       
+       }
+       .search input{
+       padding-right: 10%;
+       }
+       .search a{
+       right: 30%;
+       }
+  .box{
+  width: 121px;
+  height: 116px;
+  padding: 1px;
+  margin: 4px;
+  }
+  
+  .box img{
+  height: 63px;
+  width: 75px;
+  border-radius: 30px;
+  padding: 0px 5px;
+  
+  }
+  
+}
+
+@media  (max-width:900px){
+  html{
+    font-size: 57%;
+  }
+  ul li a{
+    padding: 21px 27px;
+  }
+  ul li ul.Dropdown li {
+    margin: 1px 0px;
+    padding: 6px 0px;
+  }
+  
+  ul li ul.Dropdown {
+    z-index: 999;
+  }
+  
+  .Dropdown li a{
+        padding:0px;
+       }
+       .search{
+       
+        width: 30%;
+        height: 33px;
+       
+       }
+       .search input{
+       padding-right: 10%;
+       }
+       .search a{
+       right: 30%;
+       }
+  .box{
+  width: 120px;
+  height: 115px;
+  padding: 1px;
+  margin: 4px;
+  }
+  
+  .box img{
+  height: 62px;
+  width: 74px;
+  border-radius: 30px;
+  padding: 0px 5px;
+  
+  }
+  }
+  
+@media  (max-width:850px){
+  html{
+    font-size: 56%;
+  }
+  ul li a{
+    padding: 21px 27px;
+  }
+  ul li ul.Dropdown li {
+    margin: 1px 0px;
+    padding: 6px 0px;
+  }
+  
+  ul li ul.Dropdown {
+    z-index: 999;
+  }
+  
+  .Dropdown li a{
+        padding:0px;
+       }
+       .search{
+       
+        width: 30%;
+        height: 33px;
+       
+       }
+       .search input{
+       padding-right: 10%;
+       }
+       .search a{
+       right: 30%;
+       }
+  .box{
+  width: 119px;
+  height: 114px;
+  padding: 1px;
+  margin: 4px;
+  }
+ 
+  .box img{
+  height: 61px;
+  width: 73px;
+  border-radius: 30px;
+  padding: 0px 5px;
+  
+  }
+  
+}
+@media  (max-width:800px){
+  html{
+    font-size: 55%;
+  }
+  ul li a{
+    padding: 21px 27px;
+  }
+  ul li ul.Dropdown li {
+    margin: 1px 0px;
+    padding: 6px 0px;
+  }
+  
+  ul li ul.Dropdown {
+    z-index: 999;
+  }
+  
+  .Dropdown li a{
+        padding:0px;
+       }
+       .search{
+       
+        width: 30%;
+        height: 33px;
+       
+       }
+       .search input{
+       padding-right: 10%;
+       }
+       .search a{
+       right: 30%;
+       }
+  .box{
+  width: 118px;
+  height: 113px;
+  padding: 1px;
+  margin: 4px;
+  }
+
+  .box img{
+  height: 60px;
+  width: 72px;
+  border-radius: 30px;
+  padding: 0px 5px;
+  
+  }
+  
+}
+@media  (max-width:750px){
+  html{
+    font-size: 54%;
+  }
+  ul li a{
+    padding: 21px 27px;
+  }
+  ul li ul.Dropdown li {
+    margin: 1px 0px;
+    padding: 6px 0px;
+  }
+  
+  ul li ul.Dropdown {
+    z-index: 999;
+  }
+  
+  .Dropdown li a{
+        padding:0px;
+       }
+       .search{
+       
+        width: 30%;
+        height: 33px;
+       
+       }
+       .search input{
+       padding-right: 10%;
+       }
+       .search a{
+       right: 30%;
+       }
+  .box{
+  width: 117px;
+  height: 112px;
+  padding: 1px;
+  margin: 4px;
+  }
+  
+  .box img{
+  height: 59px;
+  width: 71px;
+  border-radius: 30px;
+  padding: 0px 5px;
+  
+  }
+  
+}
+@media  (max-width:700px){
+  html{
+    font-size: 53%;
+  }
+
+}
+@media  (max-width:650px){
+  html{
+    font-size: 49.5%;
+  }
+
+}
+@media  (max-width:600px){
+  html{
+    font-size: 52%;
+  }
+
+}
+@media  (max-width:550px){
+  html{
+    font-size: 51%;
+  }
+
+}
+@media  (max-width:500px){
+  html{
+    font-size: 50%;
+  }
+
+}
+
